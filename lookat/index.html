@@ -13,6 +13,7 @@
 		
 		<a-asset-item id="train" src="models/train.glb"/>
 		<a-asset-item id="coffee" src="models/coffee.glb"/>
+		<a-asset-item id="backpack" src="models/backpack.glb"/>
 		
 	</a-assets>
 		
@@ -21,14 +22,14 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-box
+      <a-entity gltf-model="models/backpack.glb"
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #falcon"      
-      ></a-box>  
+      ></a-backpack>  
      <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
