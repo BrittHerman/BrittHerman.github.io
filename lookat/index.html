@@ -23,22 +23,22 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-entity gltf-model="backpack"
+      <a-box
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #falcon"      
-      ></a-entity>  
-     <a-entity gltf-model="star"
+      ></box>  
+     <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #glass"      
-      ></a-entity>  
+      ></a-box>  
      <a-entity gltf-model="train"
         position="0 2 2.5"
         scale=".2 .2 .2" 
@@ -47,14 +47,14 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #railroad"     
       ></a-entity> 
-     <a-entity gltf-model="coffee"
+     <a-box
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #office"     
-      ></a-entity> 
+      ></box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
