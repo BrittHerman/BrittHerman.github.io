@@ -12,6 +12,7 @@
 		<img id="office" src="images/office.jpg" crossorigin="anonymous" />
 		
 		<a-asset-item id="train" src="models/train.glb"/>
+		<a-asset-item id="coffee" src="models/coffee.glb"/>
 		
 	</a-assets>
 		
@@ -44,14 +45,14 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #railroad"     
       ></a-entity> 
-     <a-box
+     <a-entity gltf-model="models/coffee.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #office"     
-      ></a-box> 
+      ></a-entity> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
