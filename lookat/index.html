@@ -14,6 +14,7 @@
 		<a-asset-item id="train" src="models/train.glb"/>
 		<a-asset-item id="coffee" src="models/coffee.glb"/>
 		<a-asset-item id="backpack" src="models/backpack.glb"/>
+		<a-asset-item id="star" src="models/star.glb"/>
 		
 	</a-assets>
 		
@@ -30,14 +31,14 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #falcon"      
       ></a-entity>  
-     <a-box
+     <a-entity gltf-model="models/star.glb"
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #glass"      
-      ></a-box>  
+      ></a-entity>  
      <a-entity gltf-model="models/train.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
