@@ -12,9 +12,6 @@
 		<img id="office" src="images/office.jpg" crossorigin="anonymous" />
 		
 		<a-asset-item id="train" src="models/train.glb"/>
-		<a-asset-item id="coffee" src="models/coffee.glb"/>
-		<a-asset-item id="star" src="models/star.glb"/>
-		<a-asset-item id="backpack" src="models/backpack.glb"/>
 		
 	</a-assets>
 		
@@ -30,7 +27,7 @@
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #falcon"      
-      ></box>  
+      ></a-box>  
      <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
@@ -54,7 +51,7 @@
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #office"     
-      ></box> 
+      ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
